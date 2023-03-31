@@ -7,7 +7,7 @@ def show_field(f):
     for i in range(len(field)):
         print(str(i), *field[i])# Нумерация строк
 
-def users_input(f):# если ее убрать то работает, но пока не прописали дальше
+def users_input(f):
     while True:
         place = input("Введите координаты: ").split()
         if len(place) != 2 or not (place[0].isdigit() and place[1].isdigit()):
