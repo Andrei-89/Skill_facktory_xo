@@ -1,16 +1,10 @@
-text = "fifa1988"
-for i in range(10, 99):
-    while str(i) in text:
-        if 2000 <= 2000+i <= 2016:
-            print(2000+i-1)
+a = "1234"
 
-        if 1986 <= 1900+i <= 1999:
-            print(1900 + i - 1)
-        break
-    # for j in year:
-    #     if i == j:
-    #         print(i, end="")
+def digital_root(n):
+    n = " ".join(n).split()
+    n = list(map(int, n))
+    if len(n) == 1:
+        n = str(sum(n))
+        return digital_root(n)
 
-
-# import pandas as pd
-# def year(row)
+print(digital_root(a))
