@@ -13,6 +13,7 @@ class BoardUsedException(BoardException):
 
 class BoardWrongShipException(BoardException):# исключение для позиционированя кораблей
     pass
+
 class Dot:
     def __init__(self, x, y):
         self.x = x
@@ -213,6 +214,7 @@ class Game:
                 num -= 1
 
             if self.ai.board.count == len(self.ai.board.ships):
+
                 print("-" * 20)
                 print("Пользователь выиграл!")
                 break
